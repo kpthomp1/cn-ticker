@@ -1,4 +1,6 @@
 body{
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;

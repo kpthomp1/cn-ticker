@@ -1,4 +1,6 @@
-img {
+img {  
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
     vertical-align: -11px;
 }
 
