@@ -1,7 +1,15 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+const electron = require('electron')
 
+// Enable live reload for all the files inside your project directory
+require('electron-reload')(__dirname);
+var remote = require('remote');
+var win = remote.getCurrentWindow();
+win.webContents.session.clearCache(function(){
+//some callback.
+});
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -19,7 +27,7 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('Sports.html')
+  mainWindow.loadFile('Video.html')
 
   // Open the DevTools.
    mainWindow.webContents.openDevTools()

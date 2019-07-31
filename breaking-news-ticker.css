@@ -1,7 +1,9 @@
-img {  
+img {
+  max-width: 100%;
+  max-height: 100%;
     -webkit-user-select: none;
     -webkit-app-region: drag;
-    vertical-align: -11px;
+    vertical-align: -18px;
 }
 
 .breaking-news-ticker{
@@ -16,7 +18,7 @@ img {
   overflow: hidden;
   border-radius: 0px;
   text-align: auto;
-  font-size: 15px;
+  font-size: 20px;
 }
 .breaking-news-ticker *{
   box-sizing: border-box;
@@ -38,8 +40,8 @@ img {
   text-align: center;
   color: #FFF;
   font-weight: bold;
-  z-index: 3;
-  padding: 0 2px;
+  z-index: 0;
+  padding: 0 10px;
   white-space: nowrap;
 }
 /*title styles end****************/
@@ -102,8 +104,8 @@ img {
   display: inline-block;
   float: left;
   margin-right: 15px;
-  width: 35px;
-  height: 50px;
+  width: 50px;
+  height: 70px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
