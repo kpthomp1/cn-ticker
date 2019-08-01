@@ -179,7 +179,7 @@
 	</script>
 <br>
 	<div style="text-align:center">
-	  <button onclick="playPause();timeFunction()">Launch Ticker</button>
+	  <button id="start" onclick="playPause();timeFunction()">Launch Ticker</button>
 	<script>
 	var stinger = document.getElementById("open");
 
@@ -212,5 +212,13 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+
+<script>
+$(document).keypress(function(e){
+    if (e.which == 13){
+        $("#start").click();
+    }
+});
 </script>
 </html>
